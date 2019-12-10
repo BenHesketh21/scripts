@@ -7,7 +7,7 @@ do
 done
 for name in "${november[@]}"
 do
-	git clone https://www.github.com/BenHesketh21/${name}.git
+	git clone https://www.github.com/devops-cohort/${name}.git
 	cd ${name}
 	touch sonar-project.properties
 	echo "sonar.projectKey=${name}" > sonar-project.properties
