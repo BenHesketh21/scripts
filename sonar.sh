@@ -1,13 +1,10 @@
 #! /bin/bash
 
-declare -a november=("QAFlaskApp" "IndividualProjectQA")
-while read line
-do
-    november=("${november[@]}" $line)
-done
+declare -a november=("NAMES" "HERE")
+
 for name in "${november[@]}"
 do
-	git clone https://www.github.com/BenHesketh21/${name}.git
+	git clone https://www.github.com/devops-cohort/${name}.git
 	git checkout feature
 	cd ${name}
 	touch sonar-project.properties
