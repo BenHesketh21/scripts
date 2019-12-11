@@ -5,12 +5,12 @@ read name
 echo "Title?"
 read title
 cd /home/ubuntu/trainer_meetings
-if [ -d "$(date "+%B-%y")" ]; then
+if [ -d "$(date "+%B-%Y")" ]; then
 	cd $(date "+%B-%Y")
 else
 	mkdir $(date "+%B-%Y")
 	cd $(date "+%B-%Y")
 fi
-touch ${Name}.md
-echo "## ${title} Date:$(date "+%D")" >> ${name}.md
-vim ${name}.md
+touch ${name}$(date "+%d").md
+echo "## ${title} Date: $(date "+%D")" >> ${name}$(date "+%d").md
+vim ${name}$(date "+%d").md
