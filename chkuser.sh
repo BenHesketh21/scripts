@@ -2,10 +2,9 @@
 
 echo "What is your user name?"
 read user
-users="cat /etc/passwd"
-try="grep ${user} ${users}"
-if [ try  ]
-then
+users="/etc/passwd"
+try="$(grep ${user} ${users})"
+if ! [ -z "${try}" ]; then
 	echo "You are logged in"
 else
 	echo "Nope!"
