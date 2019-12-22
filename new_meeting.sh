@@ -4,7 +4,7 @@ echo "Name of file?"
 read name
 echo "Title?"
 read title
-cd /home/ubuntu/trainer_meetings
+cd /home/$(whoami)/trainer_meetings
 if [ -d "$(date "+%B-%Y")" ]; then
 	cd $(date "+%B-%Y")
 else
