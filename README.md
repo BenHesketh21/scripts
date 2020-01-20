@@ -18,6 +18,8 @@ These are some scripting tasks.
 See if you can create scripts that do the tasks the excercises ask for. 
 Don't forget to give your script executable permissions.
 
+# # C
+
 ## Exercise 1
 Write a script that excepts a username as an input and returns if that username is logged in or not.
 
